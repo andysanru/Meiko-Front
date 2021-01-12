@@ -57,6 +57,7 @@ Utilizaría Adobe XD dado que tiene muchas ventajas. entre ellas:
 Diseñe una arquitectura de dos capas (no es necesario realizar implementación en código):
 
 **App**: módulos de la aplicación
+
 **Store**: estado de la aplicación
 
 **R://** Básicamente se hace uso del patrón *Redux*, en angular es normal usar *NgRx* para esto.
