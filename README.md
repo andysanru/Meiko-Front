@@ -1,18 +1,36 @@
-# Ux - Ui
+# CSS
 
-### Explique brevemente qué son los Mockups y para qué son usados.
+### Diseñe un arquitectura CSS (no es necesario realizar implementación en código):
 
-Como su nombre lo indica, son diseños creados para un aplicativo, que sirven como referencia para maquetar como se verá la interfaz de usuario, a su vez ayuda al programador (principalmente front-end) a tener idea de lo que va a realizar
+```scss
+$dark: #333333;
 
+.d-flex {
+    display: flex;
+}
 
-### Diseñe Mockups para un Login a una plataforma Web (puede realizarlos a mano alzada).
+.text-dark {
+    color: $dark;   
+}
+```
+### Indique la distribución.
 
-Diseño hecho con Adobe XD, Para ver [Click aquí](https://xd.adobe.com/view/627111d5-502b-49bc-ae90-a0040c5ec662-3722/grid).
+1. Reseteos y fuentes.
+2. Cuerpo, secciones, etc.
+3. Títulos, párrafos, botones, etc.
+3. Clases auxiliares (Espaciado, bordes, etc).
 
-### Qué aplicación usaría para implementar los Mockups y por qué. Sea breve.
+Siempre haciendo el uso de clases y no del elemento directamente `p { //… }`-
+Se mantiene un código sostenible y más limpio para el programador, y se es menos propenso a crear conflictos entre estilos.
 
-Utilizaría Adobe XD dado que tiene muchas ventajas. entre ellas:
+### Qué preprocesador usaría: SASS, LESS, STYLUS, etc
 
-- Es gratis, y siempre se está actualizando.
-- Diseños más realistas, dado que algunos solo ofrecen hacer solo bocetos.
-- Es interactivo; Esto ayuda a saber cuál es el flujo del aplicativo, tanto al cliente como al programador.
+**SASS**: Es uno de los más usados y en el que mejor estor adaptado-
+
+### Comente el manejo del hack important.
+
+La regla de estilo `!important` es utilizado con el fin de dar prioridad a un código, y se usa principalmente cuando se trabaja con platillas(Themes) ya preestablecidas o en el uso de algún framework de estilo. El uso de dicha regla se considera para algunos una mala práctica y se debe evitar siempre que se pueda en nuestros códigos.
+
+### Incluya manejo de Themes.
+
+El uso de themes durante un proyecto es de gran ayuda cuando un aplicativo es de bajo presupuesto y se requiere tener ciertos diseños definidos, así evitar pérdida de tiempo mayores para el programador, y su uso principalmente es porque no se tiene tiempo para crear diseños personalizado para un sitio web.
